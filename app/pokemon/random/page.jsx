@@ -10,8 +10,6 @@ export default async function Details() {
     { next: { revalidate: 5 } }
   ).then((res) => res.json());
 
-  console.log(pokemon, "pokemon");
-
   return (
     <div className="min-h-screen w-full bg-yellow-400 p-4">
       <Head>
